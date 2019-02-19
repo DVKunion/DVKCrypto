@@ -1,9 +1,13 @@
 # DVKCrypto
 DVK's Crypto Tools 
 
-base on python3
+基于python3
 
-2019-2-19
+First install the requirement
+`pip3 install -r requirement.txt`
+
+
+2019年2月19日
 v1.0:start edit this tools by python 
 
 ### suport crypto/uncrypto 
