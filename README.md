@@ -18,6 +18,8 @@ and then you'll get some help
 
 ### coding 
 - base64/32/16
+- ceasar
+- Rot13
 
 ### hash
 - md5

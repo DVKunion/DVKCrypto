@@ -9,7 +9,8 @@ import server
 
 class parameter:
     Sel = ["eb64=", "db64=" ,"eb32=" ,"db32=","eb16=","db16=","emd5=","dmd5=",
-           "esha1=","dsha1=","esha224=","esha256=","esha384=","esha512=","path="]
+           "esha1=","dsha1=","esha224=","esha256=","esha384=","esha512=",
+           "casa=","rot13=","path="]
     def get_parameter(self):
         try:
             opts, args = getopt.getopt(sys.argv[1:], "he:d:p:m", self.Sel)

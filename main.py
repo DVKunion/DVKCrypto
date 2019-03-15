@@ -1,4 +1,3 @@
-
 import init
 
 def main():

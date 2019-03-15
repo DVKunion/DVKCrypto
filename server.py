@@ -13,12 +13,23 @@ except:
     print '\033[1;31m[Error]: Moudle edhash loading faild! \033[0m'
 
 
-def HELP(self):
-    print 'usage: main.py -i <input> -o <output>  \n' \
-          '       main.py --in=<input> --out=<output>'
-def do(self,opt,arg):
+def HELP():
+    print 'usage: main.py -h = get help  \n' \
+          '               --eb64="xxx"    base64 encrypto  --db64="xxx" base64 decrypto \n' \
+          '               --eb32="xxx"    base32 encrypto  --db32="xxx" base32 decrypto \n' \
+          '               --eb16="xxx"    base16 encrypto  --db16="xxx" base16 decrypto \n' \
+          '               --emd5="xxx"    md5    encrypto \n' \
+          '               --esha1="xxx"   sha1   encrypto \n' \
+          '               --esha224="xxx" sha224 encrypto \n' \
+          '               --esha256="xxx" sha256 encrypto \n' \
+          '               --esha384="xxx" sha384 encrypto \n' \
+          '               --esha512="xxx" sha512 encrypto \n' \
+          '               --casa="xxx"    caesar encrypto \n'\
+          '               --rot13="xxx"   rot13  encrypto \n'
+
+def do(slef,opt,arg):
     if opt == '-h':
-        self.HELP()
+        HELP()
     elif opt in ("--eb64"):
         print '\033[1;36m[ok] base64 encoding result:\033[0m'
         print base.eb64(arg)
@@ -75,3 +86,9 @@ def do(self,opt,arg):
         ans = SHA.esha512(arg)
         print '\033[1;35m[ok] sha512 encoding result:\033[0m'
         print ans
+    elif opt in ("--casa","-c"):
+        print '\033[1;36m[ok] Caesar encoding result:\033[0m'
+        caesar.casa(arg)
+    elif opt in ("--rot13"):
+        print '\033[1;36m[ok] Rot13 encoding result:\033[0m'
+        print caesar.rot13(arg)
