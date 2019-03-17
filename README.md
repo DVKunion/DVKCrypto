@@ -7,8 +7,9 @@ Continuous updating
 # how to use
 
 If you have already installed Python2.7 or an updated version
-you can easily start with The following code
-`python main.py -h`
+you can easily start with The following code  
+
+`python main.py -h`  
 
 and then you'll get some help
 
